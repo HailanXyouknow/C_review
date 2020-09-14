@@ -20,4 +20,4 @@ run: guard-f
 brun: build run
 
 # clean:
-# 	@find . -type f ! -name "*.*" ! -name "Makefile" -exec rm {} +
+# 	@find . -type f ! -name "*.*" ! -name "Makefile" -not -iwholename "*.git*" -exec rm {} +
